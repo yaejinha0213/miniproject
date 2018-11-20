@@ -7,8 +7,12 @@ public class MainPageController  implements Controller{
 
 	@Override
 	public String handRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
-	}
+		if(request.getSession().getAttribute("userVO")!=null) {
+		     // 연령대별, 관심사별 띄우는 페이지로 이동
+					
+		}
+		return "/jsp/mainPage.jsp";
 
+}
+	
 }

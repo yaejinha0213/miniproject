@@ -3,25 +3,16 @@
   <display-name>miniproject2</display-name>
   <servlet>
     <servlet-name>frontController</servlet-name>
-    <servlet-class>miniproject.controller.FrontController</servlet-class>
+    <servlet-class>miniproject2.controller.FrontController</servlet-class>
     <init-param>
       <param-name>propLocation</param-name>
-      <param-value>C:\\Lecture\\eclipse\\web-workspace\\miniproject2\\bean.properties</param-value>
+      <param-value>C:\\Lecture\\eclipse\\web-workspace\\miniproject\\miniproject2\\bean.properties</param-value>
     </init-param>
   </servlet>
   <servlet-mapping>
     <servlet-name>frontController</servlet-name>
     <url-pattern>*.do</url-pattern>
   </servlet-mapping>
-  
-  <filter>
-    <filter-name>cors</filter-name>
-    <filter-class>kr.co.mlec.filter.SimpleCORSFilter</filter-class>
-</filter>
-<filter-mapping>
-    <filter-name>cors</filter-name>
-    <url-pattern>/*</url-pattern>
-</filter-mapping>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.htm</welcome-file>

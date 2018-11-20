@@ -23,7 +23,6 @@ public class HandlerMapping {
 					for(Object key: keys) {
 						  String className=prop.getProperty(key.toString());
 						  Class<?> clz=Class.forName(className);
-						  
 						  mappings.put(key.toString(),(Controller)clz.newInstance());
 					}
 				}catch(Exception e) {

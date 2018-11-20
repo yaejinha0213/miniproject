@@ -1,0 +1,70 @@
+[data-layout=_r] {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+[data-layout=_r] > div, [data-layout=_r] > article, [data-layout=_r] > aside {
+  padding: 0 1rem 3rem 1rem;
+}
+[data-layout=_r] img {
+  width: 250px;
+  height: 200px;
+}
+
+.nopadding {
+  padding: 0 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  line-height: 1.4;
+}
+
+
+/* Feature1 */
+.MOD_FEATURE {
+  background: #f1f1f1;
+}
+
+.MOD_FEATURE_Container {
+  border-bottom: 1px solid #b9b9b9;
+  background: white;
+  display: block;
+  text-decoration: none;
+}
+.MOD_FEATURE_Container:hover img {
+  filter: brightness(1.2);
+}
+
+.MOD_FEATURE_Title {
+    font-size: 23px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.MOD_FEATURE_TextContainer {
+  padding: 1rem;
+}
+
+.MOD_FEATURE_Description {
+}
+
+.MOD_FEATURE_Picture {
+  display: block;
+  transition: filter 0.2s;
+
+}
+

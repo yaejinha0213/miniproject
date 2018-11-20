@@ -28,10 +28,16 @@ public class FrontController extends HttpServlet {
 		String uri=request.getRequestURI();
 		String context=request.getContextPath();   //기본적으로 붙는 /Mission-Web-MVC01  가져오는 것 
 		uri=uri.substring(context.length());  //context 중복이니까 자르기
+		System.out.println(uri);
 
-		try {
+		try 
+		{
 				Controller control=handler.getController(uri);
+				if(control !=null)
+				System.out.println("컨트롤러 생성");
 				String callPage=control.handRequest(request, response);
+				System.out.println("이건"+callPage+"자나");
+				System.out.println(request.getContextPath());
 				if(callPage.startsWith("redirect:")) {
 					response.sendRedirect(callPage.substring("redirect:".length()));
 				}else {

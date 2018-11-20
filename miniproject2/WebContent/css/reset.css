@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+body,p,div,ul,ol,li,dl,dd,h1,h2,h3,h4,form,fieldset, button{margin:0; padding:0;}
+body, th, td, a { 
+	color:#333; 
+	font-family: 'Nanum Gothic', sans-serif;!important;
+	font-size: 1rem;
+}
+ul,ol,li{list-style-type:none;}
+a { text-decoration:none;}
+img {border:0; vertical-align:top;}
