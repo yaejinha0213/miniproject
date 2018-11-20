@@ -5,6 +5,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
+import miniproject.util.ConnectionFactory;
 import miniproject2.user.vo.UserVO;
 
 public class UserDAO {
@@ -18,9 +19,9 @@ public class UserDAO {
 		sql.append("  from t_user ");
 		sql.append(" where id = ? and password = ? ");
 		
-/*		try(
-	//		Connection conn = new ConnectionFactory().getConnection();
-	//		PreparedStatement pstmt = conn.prepareStatement(sql.toString());
+	try(
+			Connection conn = new ConnectionFactory().getConnection();
+			PreparedStatement pstmt = conn.prepareStatement(sql.toString());
 		) {
 			
 			pstmt.setString(1, userloginVO.getId());
@@ -37,7 +38,7 @@ public class UserDAO {
 			
 		} catch(Exception e) {
 			e.printStackTrace();
-		}*/
+		}
 		
 		return userVO;
 	}
