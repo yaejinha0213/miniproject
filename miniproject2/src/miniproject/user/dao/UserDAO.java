@@ -18,7 +18,7 @@ public class UserDAO {
 		sql.append("  from t_user ");
 		sql.append(" where id = ? and password = ? ");
 		
-		try(
+/*		try(
 	//		Connection conn = new ConnectionFactory().getConnection();
 	//		PreparedStatement pstmt = conn.prepareStatement(sql.toString());
 		) {
@@ -37,7 +37,7 @@ public class UserDAO {
 			
 		} catch(Exception e) {
 			e.printStackTrace();
-		}
+		}*/
 		
 		return userVO;
 	}
